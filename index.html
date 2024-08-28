@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<link>
+<meta charset="UTF-8">
+<title>Discussion App</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="h1">Discussion Portal</h1>
+    <div class="container">
+        <div class="leftPane">
+            <div class="searchContainer">
+                <button id="newQuestion">New Question Form</button>
+                <input type="text"  placeholder="search" id="search"/>
+                <!-- <button id="search">Search</button> -->
+            </div>
+            <div class="questionList" id="questionList"></div>
+        </div>
+        <div  class="rightPane">
+            <div class="createNewQuestion" id="createNewQuestion">
+                <h1 align="center">Welcome to Discussion Portal</h1>
+                <input id="questionTitle" placeholder="Subject"/>
+                <textarea id="questionDescription" rows="10" placeholder="Question"></textarea>
+                <button id="submitQuestion">Submit</button>
+            </div>
+            <div class="questionDetailContainer hidden" id="questionDetailContainer">
+                <div id="questionInfo"></div>
+                <h2 id="resph">Responses</h2>
+                <div id="answersList">
+                    
+                </div>
+                    
+                    
+                <div id="responses">
+                    <h3>Add Responses</h3>
+                    <input type="text" placeholder="Enter name" style="margin-right: 80%;" id="name" required/><br>
+                    <textarea rows="5" placeholder="Enter Comment" id="comment" required></textarea>
+                    <!-- <button id="upvote"></button>
+                    <button id="downvote"></button> -->
+                    <br>
+                    <button id="submitResponse">Submit</button>
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="util.js"></script>
+    <script type="text/javascript" src="createQuestion.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
